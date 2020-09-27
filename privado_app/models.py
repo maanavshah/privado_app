@@ -1,3 +1,10 @@
-from django.db import models
+from djongo import models
 
-# Create your models here.
+
+class Templates(models.Model):
+    type = models.TextField()
+    entity = models.TextField()
+    customerId = models.TextField()
+    law = models.TextField()
+    fields = models.JSONField()
+    objects = models.DjongoManager()
