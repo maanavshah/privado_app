@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from privado_app import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('te/customer/<str:customer_id>/templates', views.vw_templates),
 ]
