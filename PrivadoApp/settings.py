@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'PrivadoApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'te',
+        'NAME': 'privado_app',
     }
 }
 
